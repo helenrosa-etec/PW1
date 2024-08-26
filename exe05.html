@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários - Helen Rosa</title>
+</head>
+<body>
+    <h3 style="color:#4000ff">Formulários</h3>
+    <h5>Login e Senha</h5>
+    <form action="" method="post"> <!-- action é para onde será enviado o formulário-->
+        <input type="email"
+        placeholder="E-mail" required> <br><!-- required é um campo obrigatório-->
+        <input type="password" placeholder="Senha" required> <br>
+        <button type="submit">Enviar</button> <!-- tipo de botão-->
+    </form>
+    <br><h5>Contatos</h5>
+    <form action="" method="post"><!-- input type text aceita todos os tipos de caracteres-->
+        <input type="text" placeholder="Nome" required> <br>
+        <input type="text" placeholder="Assunto" required> <br>
+    <!-- área de texto a seguir - cols quantidade de caracteres na horizontal
+         rows é número de linhas
+         tem que fechar a tag do textarea-->
+    <textarea cols="100" rows="10" placeholder="Digite sua mensagem aqui."></textarea><br>
+         <!-- criar um botão manualmente, tem, que usar o value para poder enviar-->
+          <input type="button" value="Enviar">
+    <br><h5>Formulário com Opções</h5> <!-- tipo radio 0- seleciona apenas uma opção-->
+    <form action="" method="post"></form>
+        <input type="radio" name="tipo">Carro<br>
+        <!-- para escolher apenas um, tenho que sar o mesmo name.
+         Se mudar o name, ele deixa selecionar mais de um-->
+        <input type="radio" name="tipo">Moto<br>
+        <input type="radio" name="tipo">Bicicleta<br>
+        <!-- com o tipo fleg para selecionar, porém ele permite selecionar todos-->
+         <input type="checkbox">Gasolina<br>
+         <input type="checkbox">Etanol<br>
+         <input type="checkbox">Diesel<br>
+         <input type="checkbox">Elétrico<br>
+         <!-- lista de opções para poder selecionar-->
+        <select><!-- lista suspensa-->
+            <option>Açougue</option> <!-- tem que abrir e fechar o options-->
+            <option>Padaria</option>
+            <option>Farmácia</option>
+            <option>Posto de Gasolina</option>
+        </select>
+    </form>
+</body>
+</html>
