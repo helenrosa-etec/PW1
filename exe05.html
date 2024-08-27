@@ -12,7 +12,7 @@
         <input type="email"
         placeholder="E-mail" required> <br><!-- required é um campo obrigatório-->
         <input type="password" placeholder="Senha" required> <br>
-        <button type="submit">Enviar</button> <!-- tipo de botão-->
+        <button type="submit">Enviar</button> <!-- 1° tipo de botão-->
     </form>
     <br><h5>Contatos</h5>
     <form action="" method="post"><!-- input type text aceita todos os tipos de caracteres-->
@@ -23,18 +23,18 @@
          tem que fechar a tag do textarea-->
     <textarea cols="100" rows="10" placeholder="Digite sua mensagem aqui."></textarea><br>
          <!-- criar um botão manualmente, tem, que usar o value para poder enviar-->
-          <input type="button" value="Enviar">
+          <input type="button" value="Enviar"><!-- 2° tipo de botão-->
     <br><h5>Formulário com Opções</h5> <!-- tipo radio 0- seleciona apenas uma opção-->
     <form action="" method="post"></form>
-        <input type="radio" name="tipo">Carro<br>
+        <input type="radio" name="tipo">Carro
         <!-- para escolher apenas um, tenho que sar o mesmo name.
          Se mudar o name, ele deixa selecionar mais de um-->
-        <input type="radio" name="tipo">Moto<br>
+        <input type="radio" name="tipo">Moto
         <input type="radio" name="tipo">Bicicleta<br>
         <!-- com o tipo fleg para selecionar, porém ele permite selecionar todos-->
-         <input type="checkbox">Gasolina<br>
+         <input type="checkbox">Gasolina <!-- se retirar o br fica na mesma linha-->
          <input type="checkbox">Etanol<br>
-         <input type="checkbox">Diesel<br>
+         <input type="checkbox">Diesel
          <input type="checkbox">Elétrico<br>
          <!-- lista de opções para poder selecionar-->
         <select><!-- lista suspensa-->
@@ -44,5 +44,31 @@
             <option>Posto de Gasolina</option>
         </select>
     </form>
+    <br><h2>Entradas Diversas</h2>
+    <!-- várias popções de inputs para trabalhar-->
+        <form action="" method="post">
+            <!-- input numérico-->
+             Números <br><input type="number"
+             max="20" min="1"><br>
+             <!-- maior e menor para limitar, embora ele aceite digitar outros números-->
+            <!-- input para datra é type date. Porém nesta ordem:ano, mês, dia.
+             Se em um intervalo, determinar data mínima e máxima-->
+             Data <br><input type="date"
+             min="2024-08-10" max="2024-08-30"><br>
+             Hora <br><input type="time"><br><!-- selecionar algum horário-->
+             Data e hora <input type="datetime-local"><br> <!-- dia e horas juntas-->
+             <br>Cor (Selecione a cor) <input type="color"><br>
+             <br>Arquivo <input type="file"><br>
+             <br>Imagem <input type="image"><br>
+             <br>Intervalo <input type="range"
+             min="2" max="20" step="2" value="1"><br>
+             <!-- value é o valor inicial, step é de quanto em quanto vai andar-->
+             <br>Telefone <input type="tel" maxlength="13"><br>
+             <!-- maxlenght limita quantidade de caracteres-->
+              <!-- quando no celular, vai carregar o teclado de telefone-->
+            <!-- incluir botão de limpar-->
+             <br> <input type="reset" value="Limpar formulário">
+             <input type="submit" value="Enviar"><!-- 3° tipo de botão-->
+        </form>
 </body>
 </html>
